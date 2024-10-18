@@ -1,0 +1,264 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #141414;
+    color: #8a8585;
+    /* Aquí añadimos la imagen de fondo */
+    background-image: url('LOgo final.jpg');
+    background-size: cover;  /* Ajusta el tamaño de la imagen para cubrir toda la pantalla */
+    background-position: center;  /* Centra la imagen */
+    background-repeat: no-repeat;  /* Evita que la imagen se repita */
+    background-attachment: fixed;  /* Hace que la imagen permanezca fija al hacer scroll */
+    
+}
+
+
+/* Para asegurar que el contenido se vea adecuadamente */
+section {
+    background-color: rgba(8, 8, 8, 0.9); /* Fondo oscuro semitransparente */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(243, 238, 238, 0.1);
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+/* Sección de contacto */
+section.contacto {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 50px;
+    background-color: #2f2f33;
+    background-image: url('');  /* Añadir imagen si se requiere */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    color: white;  /* Aseguramos que el texto sea visible sobre el fondo */
+}
+
+/* Título de la sección de contacto */
+section.contacto h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: #4CAF50;
+}
+
+/* Estilos de los campos del formulario */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 16px;
+    color: #f7f7f7;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+/* Estilos del botón */
+.btn-submit {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #09d13b;
+}
+
+/* Mensajes del formulario */
+.form-message {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+    color: red;
+}
+
+.form-message.success {
+    color: green;
+}
+
+/* Encabezado */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center; /* Asegura que el texto dentro del logo esté centrado */
+    text-transform: uppercase;
+}
+
+nav {
+    float: right;
+    position: absolute;  /* Para que el menú de navegación esté a la derecha */
+    right: 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 20;
+    padding: 20;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #4CAF50;
+}
+
+/* Sección hero */
+#hero {
+    ackground-color: rgba(20, 19, 19, 0.5);  /* Fondo semitransparente para superponer la imagen */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(247, 247, 247);
+}
+
+.hero-content h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.cta-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.cta-button:hover {
+    background-color: #45a049;
+}
+
+/* Sección de servicios */
+#servicios {
+    padding: 50px 0;
+    text-align: center;
+}
+
+#servicios h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Hace que se ajuste automáticamente según el espacio disponible */
+}
+
+.servicio {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.servicio h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.servicio p {
+    font-size: 16px;
+    color: #666;
+}
+
+.servicio:hover {
+    transform: translateY(-10px);
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* Diseño responsive */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-content h2 {
+        font-size: 36px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+    }
+}

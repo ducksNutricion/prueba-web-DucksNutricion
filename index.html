@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página web profesional con servicios especializados">
+    <title>Ducks Nutricion - Servicios Profesionales</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Encabezado con navegación principal -->
+    <header>
+        <div class="container">
+            <h1 class="logo">Ducks Nutricion</h1>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#hero">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                   
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección hero con mensaje de bienvenida -->
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Asesoramiento dietético y deportivo</h2>
+            <p>Asesoría personalizada para transformar tu vida: Vive sano, fuerte y feliz.
+        
+            </p>
+            <p>Ya sea que quieras perder grasa, ganar músculo o mejorar tu salud, contarás con el acompañamiento profesional adecuado para maximizar tus resultados. Un plan hecho a tu medida, con el seguimiento que te permitirá avanzar de forma efectiva y segura.</p>
+            <a href="#servicios" class="cta-button">Descubre nuestros servicios</a>
+           
+        </div>
+        
+    </section>
+
+    <!-- Sección de servicios -->
+    <main>
+        <section id="servicios" class="container">
+            <h2>Nuestros Servicios</h2>
+            <div class="grid-container">
+                <!-- Apartado de Servicio 1 -->
+                <div id="servicio1" class="servicio">
+                    <h3>Asesoramiento dietetico</h3>
+                    <p>Si buscas solo asesoría en nutrición y suplementación, este es el plan adecuado.</p>
+
+                    <p>Sin embargo, debo advertir que si tu objetivo es mejorar la estética, la nutrición por sí sola no es suficiente, ya que es solo una parte del proceso.</p>
+
+                    <p>Para mejorar la salud y el bienestar general, no hay inconveniente, pero si lo que quieres son mejores resultados estéticos, lo ideal es controlar los tres aspectos clave: dieta, entrenamiento y suplementación, ya que todos están interrelacionados.</p>
+                </div>
+
+                <!-- Apartado de Servicio 2 -->
+                <div id="servicio2" class="servicio">
+                    <h3>Asesoramiento General con patologias</h3>
+                    <p>En caso de una patología, que requiera un tratado mas cuidadoso, ya sea hipertensión, diabetes, o cualquier enfermedad que suponga un trato más controlado, estaría esta opción de seguimiento.</p>
+                </div>
+                
+                
+
+                <!-- Apartado de Servicio 3 -->
+                <div id="servicio3" class="servicio">
+                    <h3>Asesoramiento General (entreno+dieta)</h3>
+                    <p>Imagina a Laura o Carlos, personas que quieren mejorar su físico, ganar fuerza y perder grasa, como muchos otros que buscan verse mejor, sentirse más atractivos y saludables. </p>
+                    <p> Ya sea para mejorar su rendimiento en el gimnasio, desarrollar hábitos más saludables o elevar su autoestima, el objetivo es el mismo: verse y sentirse mejor, sin comprometer su salud, y lograr una mejor calidad de vida.</p>
+                        <p>Si te identificas con ellos, este es el plan para ti, sin importar si eres hombre o mujer, joven o no tan joven. ¡Es momento de dar el paso hacia tu mejor versión!</p>
+                </div>
+
+                 <!-- Apartado de Servicio 4 -->
+                 <div id="servicio4" class="servicio">
+                    <h3>Asesoramiento a colectivos</h3>
+                    <p>Imagina un equipo, un grupo de personas con un mismo objetivo: mejorar su rendimiento, salud y estética.</p>
+                    <p>Ya sea en una empresa, un equipo deportivo o un colectivo que busca fomentar hábitos saludables, la clave está en un enfoque integral.</p>
+                    <p>Nutrición adecuada, entrenamiento eficiente y una estrategia personalizada para cada miembro. </p>
+                    <p>Si buscas un plan que impulse a tu grupo hacia una mejor calidad de vida, mayor productividad y una imagen más fuerte y saludable, este asesoramiento es para ustedes.</p>
+                    <p>Sin importar el tamaño o el tipo de colectivo, juntos pueden alcanzar sus metas y potenciar el rendimiento de cada integrante.</p>
+                </div>
+                <!-- Apartado de Servicio 5 -->
+                <div id="servicio5" class="servicio">
+                    <h3>otros servicios</h3>
+                    <p>Innovamos continuamente para ofrecerte las mejores soluciones tecnológicas del mercado.</p>
+            </div>
+        </section>
+
+        <!-- Sección de contacto -->
+        <section id="contacto" class="contacto">
+            <h2>Contáctanos</h2>
+            <p>Contáctanos hoy mismo y da el primer paso hacia tu mejor versión.</p>
+            
+        </section>
+        <!-- Formulario de contacto profesional -->
+<section id="contacto" class="contacto">
+    <h2>Contáctanos</h2>
+    <form id="contact-form" action="Ducksnutricion@protonmail.com" method="POST" enctype="text/plain">
+        <div class="form-group">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" placeholder="Tu nombre" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Correo Electrónico</label>
+            <input type="email" id="email" placeholder="Tu correo electrónico" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Mensaje</label>
+            <textarea id="message" placeholder="Tu mensaje" required></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Enviar</button>
+    </form>
+    <p id="form-message" class="form-message"></p>
+</section>
+<script>
+    // Validación de formulario y mensajes de usuario
+    const form = document.getElementById('contact-form');
+    const formMessage = document.getElementById('form-message');
+
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();  // Prevenir el envío automático del formulario
+
+        // Obtener los valores de los campos
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const message = document.getElementById('message').value.trim();
+
+        // Limpiar mensajes anteriores
+        formMessage.textContent = '';
+        formMessage.classList.remove('success');
+
+        // Validar los campos del formulario
+        if (!name || !email || !message) {
+            formMessage.textContent = 'Por favor, completa todos los campos.';
+            return;
+        }
+
+        // Validar el formato del correo electrónico
+        if (!validateEmail(email)) {
+            formMessage.textContent = 'Por favor, ingresa un correo electrónico válido.';
+            return;
+        }
+
+        // Si todo es correcto, mostrar mensaje de éxito
+        formMessage.textContent = '¡Formulario enviado con éxito!';
+        formMessage.classList.add('success');
+
+        // Enviar el formulario si todo es válido
+        form.submit();
+    });
+
+    // Función para validar correos electrónicos con expresión regular
+    function validateEmail(email) {
+        const re = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+        return re.test(String(email).toLowerCase());
+    }
+</script>
+
+</section>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="container">
+            <p>© 2024 Ducks Nutricion. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="script.js" ></script>
+</body>
+</html>
